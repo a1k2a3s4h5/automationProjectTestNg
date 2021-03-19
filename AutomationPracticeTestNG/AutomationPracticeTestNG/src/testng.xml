@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "Parallel Testing Suite">
+   <test name = "Parallel Tests" parallel = "classes" thread-count = "5">
+      <classes>
+         <class name = "com.automation.practice.testng.Categories" />
+         <class name = "com.automation.practice.testng.ContactUs" />
+         <class name = "com.automation.practice.testng.LoginAndAddtoCart" />
+         <class name = "com.automation.practice.testng.LoginInvalid" />
+         <class name = "com.automation.practice.testng.LoginValid" />
+          <class name ="com.automation.practice.testng.SignUpInvalid" />
+          <class name ="com.automation.practice.testng.SignupValid" />
+           <class name ="com.automation.practice.testng.SignupMailExist" />
+      </classes>
+   </test>
+</suite>
